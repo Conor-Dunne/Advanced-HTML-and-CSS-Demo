@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul button {
+    padding: 10px;
+}
+
+.rotate {
+    transform: rotate(0.1turn);
+}
+
+.scale {
+    transform: scaleX(2.5);
+}
+
