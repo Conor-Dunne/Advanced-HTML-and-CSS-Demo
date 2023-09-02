@@ -1,9 +1,17 @@
 const pic = document.getElementById("pic");
+const resetBtn = document.getElementById("reset");
 const rotateBtn = document.getElementById("rotate");
 const scaleBtn = document.getElementById("scale");
 const skewBtn = document.getElementById("skew");
 const translateBtn = document.getElementById("translate");
+const rotate3d = document.getElementById("rotate3d");
 const cssText = document.getElementById("cssText");
+
+resetBtn.addEventListener("click", () => {
+    pic.style.removeProperty("transform")
+    cssText.textContent = "";
+
+});
 
 
 
@@ -29,6 +37,13 @@ skewBtn.addEventListener("click", () => {
 
 translateBtn.addEventListener("click", () => {
     const css = "translate(100px, 150px)"
+    pic.style.removeProperty("transform")
+    pic.style.transform = css;
+    cssText.textContent = css;
+});
+
+rotate3d.addEventListener("click", () => {
+    const css = "rotate3d(0, 9, 0, 160deg)"
     pic.style.removeProperty("transform")
     pic.style.transform = css;
     cssText.textContent = css;
