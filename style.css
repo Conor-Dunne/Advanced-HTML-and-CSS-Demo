@@ -21,11 +21,7 @@ nav > ul button {
     padding: 10px;
 }
 
-.rotate {
-    transform: rotate(0.1turn);
+#pic {
+    transition-property: transform; 
+    transition-duration: 1s;
 }
-
-.scale {
-    transform: scaleX(2.5);
-}
-
