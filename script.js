@@ -5,6 +5,7 @@ const scaleBtn = document.getElementById("scale");
 const skewBtn = document.getElementById("skew");
 const translateBtn = document.getElementById("translate");
 const rotate3d = document.getElementById("rotate3d");
+const scale3d = document.getElementById("scale3d");
 const cssText = document.getElementById("cssText");
 
 resetBtn.addEventListener("click", () => {
@@ -43,7 +44,14 @@ translateBtn.addEventListener("click", () => {
 });
 
 rotate3d.addEventListener("click", () => {
-    const css = "rotate3d(0, 9, 0, 160deg)"
+    const css = "rotate3d(0, 9, 4, 159deg)"
+    pic.style.removeProperty("transform")
+    pic.style.transform = css;
+    cssText.textContent = css;
+});
+
+scale3d.addEventListener("click", () => {
+    const css = "scale3d(0.6, 0.4, 1.7)"
     pic.style.removeProperty("transform")
     pic.style.transform = css;
     cssText.textContent = css;
