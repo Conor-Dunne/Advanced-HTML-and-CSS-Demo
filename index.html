@@ -22,14 +22,17 @@
         </nav>
     </header>
     <!-- https://www.codiga.io/blog/display-code-snippets-in-html/ -->
-    <div><pre><code>
-        .pic {
-            transform: <span id="cssText"></span>
-        }
-    </code></pre></p></div>
     <div class="container">
         <img id="pic" src="blue-water-sailing-1-1437302.jpg" alt="">
+        <div><pre><code>
+            #pic {
+                    transition-property: transform; 
+                    transition-duration: 1s;
+                    <span id="cssText"></span>
+            }
+            </code></pre></p></div>
+            <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>
